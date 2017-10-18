@@ -39,7 +39,7 @@
 - (IBAction)Blue:(UIButton *)sender {
 //    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
 //    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText.mutableCopy];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
     [str addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:[self selectText:_textField]];
     _textField.attributedText = str.copy;
 }
@@ -47,7 +47,7 @@
 - (IBAction)Green:(UIButton *)sender {
 //    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
 //    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText.mutableCopy];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
     [str addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:[self selectText:_textField]];
     _textField.attributedText = str.copy;
 }
@@ -55,7 +55,7 @@
 - (IBAction)Orange:(UIButton *)sender {
 //    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
 //    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText.mutableCopy];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
     [str addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:[self selectText:_textField]];
     _textField.attributedText = str.copy;
     
@@ -64,7 +64,7 @@
 - (IBAction)Red:(UIButton *)sender {
 //    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
 //    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText.mutableCopy];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
     [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:[self selectText:_textField]];
     _textField.attributedText = str.copy;
 }
