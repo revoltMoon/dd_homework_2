@@ -15,6 +15,5 @@
 - (IBAction)Orange:(UIButton *)sender;
 - (IBAction)Red:(UIButton *)sender;
 - (IBAction)Clear:(UIButton *)sender;
-
 @end
 
