@@ -18,57 +18,39 @@
     [super viewDidLoad];
 }
 
-- (NSRange) selectText:(UITextView*)field
+-(void)addColor:(UIColor *)color
 {
-    UITextPosition* beginOfFile = field.beginningOfDocument;
-    UITextRange* selectedRange = field.selectedTextRange;
-    UITextPosition* start = selectedRange.start;
-    UITextPosition* end = selectedRange.end;
-    const NSInteger location = [field offsetFromPosition:beginOfFile toPosition:start];
-    const NSInteger length = [field offsetFromPosition:start toPosition:end];
-    return NSMakeRange(location, length);
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
+    [str addAttribute:NSForegroundColorAttributeName value:color range:[self.textField selectedRange]];
+    _textField.attributedText = str;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)secondVC:(UIButton *)sender {
 }
 
 
 - (IBAction)Blue:(UIButton *)sender {
-//    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
-//    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:[self selectText:_textField]];
-    _textField.attributedText = str.copy;
+    [self addColor: UIColor.blueColor];
 }
 
 - (IBAction)Green:(UIButton *)sender {
-//    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
-//    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:[self selectText:_textField]];
-    _textField.attributedText = str.copy;
+    [self addColor: UIColor.greenColor];
 }
 
 - (IBAction)Orange:(UIButton *)sender {
-//    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
-//    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:[self selectText:_textField]];
-    _textField.attributedText = str.copy;
-    
+    [self addColor: UIColor.orangeColor];
 }
 
 - (IBAction)Red:(UIButton *)sender {
-//    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]init];
-//    str = _textField.attributedText.mutableCopy;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithAttributedString:_textField.attributedText];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:[self selectText:_textField]];
-    _textField.attributedText = str.copy;
+    [self addColor: UIColor.redColor];
 }
+
 - (IBAction)Clear:(UIButton *)sender {
-    _textField.textColor = UIColor.blackColor;
+    [self addColor: UIColor.blackColor];
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 @end

@@ -14,6 +14,7 @@
 		5A878C5A1F8F83350041D8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A878C591F8F83350041D8AB /* Assets.xcassets */; };
 		5A878C5D1F8F83350041D8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A878C5B1F8F83350041D8AB /* LaunchScreen.storyboard */; };
 		5A878C601F8F83350041D8AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A878C5F1F8F83350041D8AB /* main.m */; };
+		5AC9A1C51F97FD7400DB3BD0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9A1C41F97FD7400DB3BD0 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		5A878C5C1F8F83350041D8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A878C5E1F8F83350041D8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A878C5F1F8F83350041D8AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AC9A1C41F97FD7400DB3BD0 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5AC9A1C61F97FD8F00DB3BD0 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				5A878C4E1F8F83350041D8AB /* AppDelegate.m */,
 				5A878C501F8F83350041D8AB /* ViewController.h */,
 				5A878C511F8F83350041D8AB /* ViewController.m */,
+				5AC9A1C61F97FD8F00DB3BD0 /* TableViewController.h */,
+				5AC9A1C41F97FD7400DB3BD0 /* TableViewController.m */,
 				5A878C531F8F83350041D8AB /* Main.storyboard */,
 				5A878C591F8F83350041D8AB /* Assets.xcassets */,
 				5A878C5B1F8F83350041D8AB /* LaunchScreen.storyboard */,
@@ -148,6 +153,7 @@
 				5A878C521F8F83350041D8AB /* ViewController.m in Sources */,
 				5A878C4F1F8F83350041D8AB /* AppDelegate.m in Sources */,
 				5A878C601F8F83350041D8AB /* main.m in Sources */,
+				5AC9A1C51F97FD7400DB3BD0 /* TableViewController.m in Sources */,
 				5A878C581F8F83350041D8AB /* dd_homework_2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
