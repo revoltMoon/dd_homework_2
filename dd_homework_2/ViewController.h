@@ -10,5 +10,6 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *textField;
+-(NSMutableArray *)returnArr;
 @end
 
